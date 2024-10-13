@@ -132,6 +132,7 @@ celerybeat.pid
 .env
 .venv
 env/
+locjaHtmlTestes
 venv/
 ENV/
 env.bak/
