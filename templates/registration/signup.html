@@ -10,29 +10,7 @@
     <title>LOCJA</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-    tailwind.config={
-        theme:{
-            extend:{
-                colors:{
-                            verde:{
-                            escuro:'#42765D',
-                            claro:'#ebe7e0'
-                                },
-
-                            verde_botao:{
-                            claro:'#03484C'
-                                },
-                        },
-                        
-                        fontFamily:{
-                           jersey: ['Inter, sans-serif']
-                                }
-                    }
-        }
-    }
-
-    </script>
+    <script src="/static/scripts/tailwindConfig.js"></script>
 </head>
 
 <body class="bg-verde-claro font-jersey flex justify-center items-center min-h-screen overflow-hidden ">
@@ -110,7 +88,7 @@
                 </div>
                
                 <div class="flex justify-center gap-8">
-                <button class=" font-bold text-white   bg-verde-escuro w-60 py-2 rounded-full shadow-2xl hover:bg-verde_botao-claro duration-150 " type="submit">Entrar</button>
+                <button class=" font-bold text-white   bg-verde-escuro w-60 py-2 rounded-full shadow-2xl hover:bg-verde_botao-claro duration-150 "type="submit">Cadastrar</button>
                 </div>
         </form>
         <!--

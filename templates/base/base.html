@@ -2,153 +2,182 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> </title>
-
+    <title>{}</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-
-
-    tailwind.config={
-        theme:{
-            extend:{
-                colors:{
-                            verde:{
-                            escuro:'#42765D',
-                            
-                                },
-
-                            verde_botao:{
-                            claro:'#03484C',
-                            escuro:'#42765D'
-                                },
-                                cinza:{
-                                    claro:'#F7F7F9'
-                                },
-
-                            input:{
-                                color: 'black'
-                              },          
-                         },
-                        
-                        fontFamily:{
-                           jersey: ['Inter, sans-serif']
-                                }
-                    }
-        }
-
-        
-
-    }
-
-    </script>
-
-
+    <script src="/static/scripts/tailwindConfig.js"></script>
 </head>
-<body>
-    <form  method="post" action="cadastro.php">
-        <div class="flex justify-center align-items fixed top-20 left-60 h-56 grid grid-cols-4 p-4">
 
-    
-           <div> <label for="id">Id:</label><br>
-            <input   class="border border-stone-900 p-1 w-24" type="text" id="id" name="id" disabled  ><br><br></div>
-    
-            <div class="justify-center align-items"><label for="razao_social">Razão social:</label><br>
-            <input class="border border-stone-900 p-1 w-24 " type="text" id="FORNECEDOR_NOME_RAZAO_SOCIAL" name="FORNECEDOR_NOME_RAZAO_SOCIAL"><br><br></div>
-    
-            <div><label for="cpf_cnpj">CPF/CNPJ:</label><br>
-            <input  class="border border-stone-900 p-1 w-24 " type="text" id="FORNECEDOR_CPF_CNPJ" name="FORNECEDOR_CPF_CNPJ"><br><br></div>
-    
-            <div><label for="email">Email:</label><br>
-            <input  class="border border-stone-900 p-1 w-24 " type="email" id="FORNECEDOR_EMAIL" name="FORNECEDOR_EMAIL"><br><br></div>
-    
-           <div><label for="endereco">Endereço:</label><br>
-            <input  class="border border-stone-900 p-1 w-24 " type="text" id="FORNECEDOR_ENDERECO" name="FORNECEDOR_ENDERECO"><br><br></div> 
-    
-           <div><label for="numero">Número:</label><br>
-            <input   class="border border-stone-900 p-1 w-24" type="number" id="FORNECEDOR_ENDERECO_NUMERO" name="FORNECEDOR_ENDERECO_NUMERO"><br><br></div>
-    
-            <div><label for="bairro">Bairro:</label><br>
-            <input  class="border border-stone-900 p-1 w-24" type="text" id="FORNECEDOR_BAIRRO" name="FORNECEDOR_BAIRRO"><br><br></div>
-    
-            <div><label for="cidade">Cidade:</label><br>
-            <input class="border border-stone-900 p-1 w-24" type="text" id="FORNECEDOR_CIDADE" name="FORNECEDOR_CIDADE"><br><br></div>
-    
-           <div> <label for="uf">UF:</label><br>
-            <input  class="border border-stone-900 p-1 w-24" type="text" id="FORNECEDOR_UF" name="FORNECEDOR_UF"><br><br></div>
-    
-            <div><label for="telefone1">Telefone 1:</label><br>
-            <input  class="border border-stone-900 p-1 w-24" stype="tel" id="FORNECEDOR_FONE1" name="FORNECEDOR_FONE1"><br><br></div>
-    
-          <div>  <label for="telefone2">Telefone 2:</label> <br>
-            <input  class="border border-stone-900 p-1 w-24" type="tel" id="FORNECEDOR_FONE2" name="FORNECEDOR_FONE2"><br><br></div>
-    
-           <div> <label for="observacao">Observação:</label><br>
-            <textarea  class="border border-stone-900 p-1 w-24"  id="FORNECEDOR_OBSERVACAO" name="FORNECEDOR_OBSERVACAO"></textarea><br><br></div>
-    
-           <div> <label> Situação:</label><br>
-            <input type="checkbox" name="FORNECEDOR_ATIVO" value="1"> Ativo <br><br></div>
-           
-            <div><label for="tipo"> Tipo:</label><br>
-            <input  class="border border-stone-900 p-1 w-24" type="text" id="FORNECEDOR_TIPO" name="FORNECEDOR_TIPO"><br><br></div>
-    <br>
-    <br>
-    <br>
-            <div class="flex justify-center items-end ">
-                <button class=" text-white  bg-verde-escuro w-60 py-2 rounded-full shadow-2xl hover:bg-verde_botao-claro duration-150 " type="submit">Cadastrar</button>
-            </div>
-        </div>
-            </form>
-        </form>
-        <!-- LATERAL FIXA CINZA-->
-        <div class=" bg-cinza-claro fixed top-0 left-0 w-52 h-full ">
-          
-    
-            <!--DIV PARA IMAGEM DA LOGO-->
-            <div class="flex justify-center ">
-                <img class="w-28 h-28 mr-2 " src="image/LOGO2 (1).png" alt="logo">
-            </div>
-    
-    
-            <!--LISTA DE BOTÃO-->
-            <ul>
-                    <div class="flex justify-center ">
-                        <button class=" bg-cinza-claro mt-14 mb-4  w-52 py-2 rounded-full hover:bg-verde_botao-escuro duration-150 flex justify-center rounded hover:rounded-lg" type="button">
-                        <img class="w-4 h-4 mr-2" src="image/casa.png" alt="logo">Inicio</button>
-                    </div>
-                            
-                    <button class=" bg-cinza-claro mt-2  mb-4  w-52 py-2 rounded-full  hover:bg-verde_botao-escuro duration-150 flex justify-center rounded hover:rounded-lg" type="button">
-                    <img class="w-4 h-4 mr-2" src="image/calendar.png" alt="logo">Alugueis</button>
-                                
-                    <button class=" bg-cinza-claro mt-2  mb-4  w-52 py-2 rounded-full  hover:bg-verde_botao-escuro duration-150 flex justify-center rounded hover:rounded-lg" type="button">
-                    <img class="w-4 h-4 mr-2" src="image/cliente.png" alt="logo">Clientes</button>
-                                    
-                    <button class=" bg-cinza-claro mt-2  mb-4  w-52 py-2 rounded-full  hover:bg-verde_botao-escuro duration-150 flex justify-center rounded hover:rounded-lg" type="button">
-                    <img class="w-4 h-4 mr-2" src="image/furadeira.png" alt="logo">Equipamentos</button>
-    
-                    <button class=" bg-cinza-claro mt-2  mb-4  w-52 py-2 rounded-full  hover:bg-verde_botao-escuro duration-150 flex justify-center rounded hover:rounded-lg" type="button">
-                    <img class="w-4 h-4 mr-2" src="image/cliente.png" alt="logo">Fornecedores</button>
-    
-                    <button class=" bg-cinza-claro mt-2  mb-4  w-52 py-2 rounded-full  hover:bg-verde_botao-escuro duration-150 flex justify-center rounded hover:rounded-lg" type="button">
-                    <img class="w-4 h-4 mr-2" src="image/selecionado.png" alt="logo">Orçamentos</button>
-    
-                    <button class=" bg-cinza-claro mt-2  mb-4  w-52 py-2 rounded-full  hover:bg-verde_botao-escuro duration-150 flex justify-center rounded hover:rounded-lg" type="button">
-                    <img class="w-4 h-4 mr-2" src="image/computer.png" alt="logo">Relatórios</button>
-    
-                    <button class=" bg-cinza-claro mt-2  mb-4  w-52 py-2 rounded-full  hover:bg-verde_botao-escuro duration-150 flex justify-center rounded hover:rounded-lg" type="button">
-                    <img class="w-4 h-4 mr-2" src="image/prancheta2.png" alt="logo">Revisões</button>
-                
-                    <img class="w-4 h-4 mr-2" src="image/ajuda.png" alt="logo">
-                </div>
-            </ul>
-    
+<body class="bg-verde-claro font-jersey">
+
+    <header class="w-full">
         <!--DIV FIXA SUPERIOR VERDE-->
-        <div class="w-full h-14 bg-verde-escuro flex justify-end items-center">
-           <img class="w-24 h-24 " src="image/Locja.png" alt="logo">
+        <div class="w-full h-14 bg-verde-escuro flex items-center justify-between px-4">
+            <img class="w-24 h-24" src="{% static 'assets/image/Locja.png' %}" alt="logo">
+            <div class="flex items-center">
+                
+                <span class="ml-3 text-white">{{ user.username }}</span>
+            </div>
         </div>
-    
-        
-    </body>
-    </html>
+    </header>
+
+    <aside id="sidebar-multi-level-sidebar"
+        class="fixed left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-cinza-claro"
+        aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto">
+            <ul class="space-y-2 font-medium">
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-verde_botao-escuro group">
+                        <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 22 21">
+                            <path
+                                d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
+                            <path
+                                d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
+                        </svg>
+                        <span class="ms-3">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-verde_botao-escuro group">
+                            
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-90">
+                            <path
+                                d="M7.502 6h7.128A3.375 3.375 0 0 1 18 9.375v9.375a3 3 0 0 0 3-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 0 0-.673-.05A3 3 0 0 0 15 1.5h-1.5a3 3 0 0 0-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6ZM13.5 3A1.5 1.5 0 0 0 12 4.5h4.5A1.5 1.5 0 0 0 15 3h-1.5Z" />
+                            <path fill-rule="evenodd"
+                                d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V9.375ZM6 12a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V12Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 15a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V15Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 18a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V18Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+
+
+
+                        <span class="ms-3">Alugueis</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-verde_botao-escuro group">
+                        <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        viewBox="0 0 24 24">
+                       <path fill-rule="evenodd" d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z" clip-rule="evenodd" />
+                       <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
+                   </svg>
+                        <span class="ms-3">Clientes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-verde_botao-escuro group">
+                        <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M12 6.75a5.25 5.25 0 0 1 6.775-5.025.75.75 0 0 1 .313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 0 1 1.248.313 5.25 5.25 0 0 1-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 1 1 2.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0 1 12 6.75ZM4.117 19.125a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z"
+                                clip-rule="evenodd" />
+                            <path
+                                d="m10.076 8.64-2.201-2.2V4.874a.75.75 0 0 0-.364-.643l-3.75-2.25a.75.75 0 0 0-.916.113l-.75.75a.75.75 0 0 0-.113.916l2.25 3.75a.75.75 0 0 0 .643.364h1.564l2.062 2.062 1.575-1.297Z" />
+                            <path fill-rule="evenodd"
+                                d="m12.556 17.329 4.183 4.182a3.375 3.375 0 0 0 4.773-4.773l-3.306-3.305a6.803 6.803 0 0 1-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 0 0-.167.063l-3.086 3.748Zm3.414-1.36a.75.75 0 0 1 1.06 0l1.875 1.876a.75.75 0 1 1-1.06 1.06L15.97 17.03a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="ms-3">Equipamentos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-verde_botao-escuro group">
+                        <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M3.375 4.5C2.339 4.5 1.5 5.34 1.5 6.375V13.5h12V6.375c0-1.036-.84-1.875-1.875-1.875h-8.25ZM13.5 15h-12v2.625c0 1.035.84 1.875 1.875 1.875h.375a3 3 0 1 1 6 0h3a.75.75 0 0 0 .75-.75V15Z" />
+                            <path
+                                d="M8.25 19.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0ZM15.75 6.75a.75.75 0 0 0-.75.75v11.25c0 .087.015.17.042.248a3 3 0 0 1 5.958.464c.853-.175 1.522-.935 1.464-1.883a18.659 18.659 0 0 0-3.732-10.104 1.837 1.837 0 0 0-1.47-.725H15.75Z" />
+                            <path d="M19.5 19.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z" />
+                        </svg>
+
+
+                        <span class="ms-3">Fornecedores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-verde_botao-escuro group">
+                        <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path d="M4.5 3.75a3 3 0 0 0-3 3v.75h21v-.75a3 3 0 0 0-3-3h-15Z" />
+                            <path fill-rule="evenodd"
+                                d="M22.5 9.75h-21v7.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3v-7.5Zm-18 3.75a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                        <span class="ms-3">Orçamentos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-verde_botao-escuro group">
+                        <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M12 6.75a5.25 5.25 0 0 1 6.775-5.025.75.75 0 0 1 .313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 0 1 1.248.313 5.25 5.25 0 0 1-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 1 1 2.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0 1 12 6.75ZM4.117 19.125a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="ms-3">Revisões</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-verde_botao-escuro group">
+                        <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M7.502 6h7.128A3.375 3.375 0 0 1 18 9.375v9.375a3 3 0 0 0 3-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 0 0-.673-.05A3 3 0 0 0 15 1.5h-1.5a3 3 0 0 0-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6ZM13.5 3A1.5 1.5 0 0 0 12 4.5h4.5A1.5 1.5 0 0 0 15 3h-1.5Z"
+                                clip-rule="evenodd" />
+                            <path fill-rule="evenodd"
+                                d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V9.375ZM6 12a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V12Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 15a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V15Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 18a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V18Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="ms-3">Relatórios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-verde_botao-escuro group">
+                        <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
+                        </svg>
+                        <!--Logout-->
+                        <form action="{% url 'logout' %}" method="post">
+                            {% csrf_token %}
+                            <button type="submit" class="ms-3">Sair</button>
+                        </form>
+
+                       
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+</body>
+
+</html>
