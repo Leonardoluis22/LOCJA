@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/static/scripts/tailwindConfig.js"></script>
 </head>
@@ -23,7 +24,7 @@
             </div>
         </div>
     </header>
-
+    <!--DIV FIXA LATERAL-->
     <aside id="sidebar-multi-level-sidebar"
         class="fixed left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 bg-cinza-claro"
         aria-label="Sidebar">
@@ -63,7 +64,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="{% url 'customers_list' %}" 
                         class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-verde_botao-escuro group">
                         <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -166,18 +167,23 @@
                             {% csrf_token %}
                             <button type="submit" class="ms-3">Sair</button>
                         </form>
-
                        
                     </a>
                 </li>
             </ul>
         </div>
     </aside>
-    <main>
+    
+    <main class="ml-64 p-4 sm:ml-64">
         {% block content %}
+        {# Bloco de conteudo principal #}
 
         {% endblock %}
     </main>
+
+    {% block button %}
+
+    {% endblock%}
 </body>
 
 </html>
