@@ -30,6 +30,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "accounts.apps.AccountsConfig", ## App para gerenciamento de usuários
     "customers.apps.CustomersConfig", ## App para gerenciamento de clientes
+    "equipment.apps.EquipmentConfig", ## App para gerenciamento de equipamentos   
+    "supplier.apps.SupplierConfig", ## App para gerenciamento de fornecedores
 ]
 
 MIDDLEWARE = [

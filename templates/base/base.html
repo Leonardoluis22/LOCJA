@@ -6,7 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{}</title>
+    <title>
+        {% block title%}
+      
+        {% endblock %}
+    </title>
     <link rel="stylesheet" href="/static/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/static/scripts/tailwindConfig.js"></script>
@@ -76,7 +80,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="{% url 'equipment_list'%}"
                         class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-verde_botao-escuro group">
                         <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -94,7 +98,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="{% url 'supplier_list' %}"
                         class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-verde_botao-escuro group">
                         <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"

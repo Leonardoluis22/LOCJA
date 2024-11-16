@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import CustomerListView
-
+from .views import CustomerListView, CustomerCreateView
 
 urlpatterns = [
-    path('customers/', CustomerListView.as_views(), name='customers_list'),
+    path("", CustomerListView.as_view(), name='customers_list'),
+    path('register/', CustomerCreateView.as_view(), name='customers_register'),  # Corrigida a URL
 ]

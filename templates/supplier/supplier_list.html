@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title%}
-Clientes
+Fornecedores
 {% endblock %}
 
 {% block content %}
@@ -18,11 +18,11 @@ Clientes
                 </tr>
             </thead>
             <tbody>
-                {% for customer in customers %}
+                {% for supplier in suppliers  %}
                    <tr>
-                    <td class="px-4 py-2 border-b border-gray-200">{{ customer.cliente_nome_razaosocial }} {{ customer.cliente_sobrenome }}</td>
-                    <td class="px-4 py-2 border-b border-gray-200">{{ customer.cliente_endereco}}, {{customer.cliente_bairro}}, {{customer.cliente_endereco_numero}}</td>
-                    <td class="px-4 py-2 border-b border-gray-200">{{customer.cliente_fone1}}</td>
+                    <td class="px-4 py-2 border-b border-gray-200">{{ supplier.fornecedor_nome_razao_social }}</td>
+                    <td class="px-4 py-2 border-b border-gray-200">{{ supplier.fornecedor_endereco}}, {{supplier.fornecedor_bairro}}, {{supplier.fornecedor_endereco_numero}}</td>
+                    <td class="px-4 py-2 border-b border-gray-200">{{supplier.fornecedor_fone1}}</td>
                     <td class="px-4 py-2 border-b border-gray-200">
                         <!--Editar-->
                         <div class="flex">     
@@ -52,7 +52,7 @@ Clientes
 
 {% block button %}
     <div class="flex items-center justify-center mt-8">
-        <a href="{% url 'customers_register' %}">
+        <a href="{% url 'supplier_register' %}">
             <button class="text-white bg-verde_botao-escuro w-60 py-2 rounded-full shadow-2xl" type="button">Cadastrar</button>
         </a>
     </div>
