@@ -28,7 +28,8 @@ class Fornecedor(models.Model):
     fornecedor_tipo = models.CharField(max_length=2, choices=FORNECEDOR_TIPO_CHOICES, verbose_name="Tipo")
 
     class Meta:
-        db_table = 'FORNECEDOR_PF_PJ'
+        db_table = 'fornecedor_pf_pj'
+        managed = True
         verbose_name = 'Fornecedor'
         verbose_name_plural = 'Fornecedores'
 

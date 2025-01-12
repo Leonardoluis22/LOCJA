@@ -14,8 +14,7 @@ urlpatterns = [
     path("home/", TemplateView.as_view(template_name="home/home.html"), name="home"),
     # path("customers/", CustomerListView.as_view(), name="customers_list"),
     # path("customers/register/", CustomerCreateView.as_view(), name="customers_register"),
-    path("customers/", include("customers.urls")),  # Adicionada a URL correta
-        # Adicionada a URL correta
+    path("customers/", include("customers.urls")), 
     path("supplier/", include("supplier.urls")),
     path("equipment/", include("equipment.urls")),
 ]

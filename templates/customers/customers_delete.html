@@ -1,0 +1,18 @@
+{% extends "base\base.html" %}
+{% load static%}
+
+{% block title %}
+<h1>Confirma delete</h1>
+{% endblock %}
+
+{% block content %}
+
+    <form method="post">
+        {% csrf_token %}
+        <p>Tem certeza que deseja excluir o cadastro deste cliente ? {{ customers }}</p>
+        {{ form.as_p }}
+        <button type="submit" value="Confirm" class="text-white bg-verde_botao-escuro w-60 py-2 rounded-full shadow-2xl" type="button">
+            Excluir
+    </form>
+
+{% endblock%}
