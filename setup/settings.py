@@ -32,6 +32,9 @@ INSTALLED_APPS = [
     "customers.apps.CustomersConfig", ## App para gerenciamento de clientes
     "equipment.apps.EquipmentConfig", ## App para gerenciamento de equipamentos   
     "supplier.apps.SupplierConfig", ## App para gerenciamento de fornecedores
+    "aluguel.apps.AluguelConfig",
+    "orcamento.apps.OrcamentoConfig",
+    "reports.apps.ReportsConfig"
 ]
 
 MIDDLEWARE = [
