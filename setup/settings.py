@@ -34,7 +34,8 @@ INSTALLED_APPS = [
     "supplier.apps.SupplierConfig", ## App para gerenciamento de fornecedores
     "aluguel.apps.AluguelConfig",
     "orcamento.apps.OrcamentoConfig",
-    "reports.apps.ReportsConfig"
+    "reports.apps.ReportsConfig",
+    "home.apps.HomeConfig",
 ]
 
 MIDDLEWARE = [
@@ -52,7 +53,7 @@ ROOT_URLCONF = "setup.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, "templates")],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],  # Certifique-se que esta linha está assim
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [

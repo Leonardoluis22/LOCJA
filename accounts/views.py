@@ -8,11 +8,10 @@ from django.views.generic import CreateView
 
 class LoginView(LoginView):
     template_name = "registration/login.html"
-    ##fields = "__all__"
     redirect_authenticated_user = True
 
-    def get_sucess_url(self):
-            return reverse_lazy("home")
+    def get_success_url(self):  # Corrigido o nome do método
+        return reverse_lazy("home")  # Adicionado namespace
 
     def form_invalid(self, form):
         messages.error(self.request, "Usuário ou senha inválidos")
@@ -26,7 +25,7 @@ class SignUpView(CreateView):
      
      success_url = reverse_lazy("login")
      template_name = "registration/signup.html"
-     
+
 
 
 
