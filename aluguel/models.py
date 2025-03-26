@@ -15,7 +15,7 @@ class Aluguel(models.Model):
 
     aluguel_id = models.AutoField(primary_key=True)
     cliente = models.ForeignKey(Customer, on_delete=models.CASCADE, db_column='cliente_id')
-    orcamento = models.ForeignKey(Orcamento, on_delete=models.SET_NULL, null=True, blank=True, db_column='orcamento_id')
+    # orcamento = models.ForeignKey(Orcamento, on_delete=models.SET_NULL, null=True, blank=True, db_column='orcamento_id')
     aluguel_data_retirada = models.DateField(verbose_name="Data de Retirada")
     
     # Campos de endereço
@@ -41,3 +41,6 @@ class Aluguel(models.Model):
 
     class Meta:
         db_table = 'ALUGUEL'
+        managed = True
+        verbose_name = 'Aluguel'
+        verbose_name_plural = 'Aluguéis'

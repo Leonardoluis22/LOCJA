@@ -26,8 +26,14 @@ class Customer(models.Model):
     cliente_fone1 = models.CharField(max_length=20, verbose_name="Telefone 1")
     cliente_fone2 = models.CharField(max_length=20, blank=True, null=True, verbose_name="Telefone 2")
     cliente_ativo = models.CharField(max_length=5, choices=CLIENTE_ATIVO_CHOICES, verbose_name="Cliente Ativo")
-    # cliente_observacao = models.TextField(blank=True, null=True, verbose_name="Observação")
+    cliente_observacao = models.TextField(blank=True, null=True, verbose_name="Observação")
     cliente_tipo = models.CharField(max_length=2, choices=CLIENTE_TIPO_CHOICES, verbose_name="Tipo de Cliente")
+
+    class Meta:
+        db_table = 'CLIENTE'
+        managed = True
+        verbose_name = 'Cliente'
+        verbose_name_plural = 'Clientes'
 
     def __str__(self):
         return self.cliente_nome_razaosocial

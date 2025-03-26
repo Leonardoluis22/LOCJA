@@ -26,3 +26,4 @@ class Orcamento(models.Model):
 
     def __str__(self):
         return f'Orçamento {self.orcamento_id} - Cliente: {self.cliente}'
+

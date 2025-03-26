@@ -34,7 +34,6 @@ INSTALLED_APPS = [
     "supplier.apps.SupplierConfig", ## App para gerenciamento de fornecedores
     "aluguel.apps.AluguelConfig",
     "orcamento.apps.OrcamentoConfig",
-    "reports.apps.ReportsConfig",
     "home.apps.HomeConfig",
 ]
 

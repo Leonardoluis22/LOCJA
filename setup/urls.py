@@ -15,6 +15,6 @@ urlpatterns = [
     path("customers/", include("customers.urls")), 
     path("supplier/", include("supplier.urls")),
     path("equipment/", include("equipment.urls")),
-    path("aluguel/", include("aluguel.urls")),
+    # path("aluguel/", include("aluguel.urls")),
     
 ]
